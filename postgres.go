@@ -1,13 +1,13 @@
 package database
 
 import (
-	"github.com/GoHyperrr/hyperrr/pkg/db"
+	"github.com/GoHyperrr/mdk"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
 
 func init() {
-	db.RegisterDialect("postgres", func(dsn string) gorm.Dialector {
+	mdk.RegisterDialect("postgres", func(dsn string) gorm.Dialector {
 		return postgres.Open(dsn)
 	})
 }
