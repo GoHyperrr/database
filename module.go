@@ -25,6 +25,9 @@ func (m *Module) Routes() []mdk.Route {
 }
 
 func (m *Module) Init(ctx context.Context, rt mdk.Runtime) error {
+	if rt.Logger() != nil {
+		rt.Logger().Info("database provider registered", "id", m.ID())
+	}
 	return nil
 }
 
