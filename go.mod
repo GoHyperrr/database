@@ -3,7 +3,7 @@ module github.com/GoHyperrr/database
 go 1.25.5
 
 require (
-	github.com/GoHyperrr/mdk v0.3.0
+	github.com/GoHyperrr/mdk v0.4.0
 	gorm.io/driver/postgres v1.6.0
 	gorm.io/gorm v1.31.1
 )
